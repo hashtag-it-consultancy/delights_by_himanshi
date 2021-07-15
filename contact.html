@@ -83,7 +83,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-5 contact-map">
 			<h5>Google Map</h5>
 			<div class="map animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+				<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=22.777671, 75.886921&amp;t=h&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fridaynightfunkin.net/">FNF Download</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe> -->
 
 			</div>
 			<div class="address">
@@ -133,21 +134,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p class="your-para">Cake Type</p>
 						<div class="form-group">
 							<!-- <label for="exampleInputPassword1">Cake Type</label><br/> -->
-							<input list="CakeType"
+							<!-- <input list="CakeType"
 							type="text"
 							class="form-control"
 							name="CakeType"
 							required
-							>
-							<datalist id="CakeType">
-							  <option value="Regular Cake">
-							  <option value="Theme Cake">
-							  <option value="Dry Cake">
-							  <option value="Pinata Cake">
-							  <option value="Anti-gravity cake">
-							  <option value="Pull Me Up Cake">
-							  <option value="Others">
-							</datalist>
+							> -->
+							
+							<select id="CakeType" class="form-control">
+							  <option value="Regular Cake">Regular Cake</option>
+							  <option value="Theme Cake">Theme Cake</option>
+							  <option value="Dry Cake">Dry Cake</option>
+							  <option value="Pinata Cake">Pinata Cake</option>
+							  <option value="Anti-gravity cake">Anti-gravity cake</option>
+							  <option value="Pull Me Up Cake">Pull Me Up Cake</option>
+							  <option value="Others">Others</option>
+							  </select>
+							  
 						  </div>
 						<!-- <input type="Password" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}"> -->
 					</div>
