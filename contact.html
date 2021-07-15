@@ -100,29 +100,67 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="grid-contact">
 					<div class="col-md-6 contact-grid">
 						<p class="your-para">Name </p>
-							<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+							<input type="text"
+							 id="name" 
+							 name="Name"
+							 value="" 
+							 placeholder="Your Name *"
+							 required=""
+							 >
 						</div>
 					<div class="col-md-6 contact-grid">
 					<p class="your-para">Phone number</p>	
-						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<input type="text" 
+						id="phone" 
+						name="Phone"
+						value="" 
+						placeholder="Your Contact Number *"
+						>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="grid-contact">
 					<div class="col-md-6 contact-grid">
-						<p class="your-para">Email</p>
-						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">Address</p>
+						<input type="text" 
+						id="address" 
+						value="" 
+						placeholder="Your Address *"
+						required=""
+						>
 					</div>
 					<div class="col-md-6 contact-grid">
-						<p class="your-para">Password</p>
-						<input type="Password" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">Cake Type</p>
+						<div class="form-group">
+							<!-- <label for="exampleInputPassword1">Cake Type</label><br/> -->
+							<input list="CakeType"
+							type="text"
+							class="form-control"
+							name="CakeType"
+							required
+							>
+							<datalist id="CakeType">
+							  <option value="Regular Cake">
+							  <option value="Theme Cake">
+							  <option value="Dry Cake">
+							  <option value="Pinata Cake">
+							  <option value="Anti-gravity cake">
+							  <option value="Pull Me Up Cake">
+							  <option value="Others">
+							</datalist>
+						  </div>
+						<!-- <input type="Password" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}"> -->
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<p class="your-para msg-para">MESSAGE</p>
-				<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
+				<textarea cols="77" rows="6" id="message" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
 					<div class="send">
-						<input type="submit" value="Send " >
+						<input type="submit"
+					    name="submit"
+                        value="Submit"
+						onclick="gotowhatsapp()" 
+						 >
 					</div>
 			</form>
 			</div>	
@@ -164,6 +202,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<p class="footer-class animated wow bounce" data-wow-duration="1000ms" data-wow-delay="500ms">&copy; 2016 Cookery . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 		</div>
 	</div>		
+	<script>
+		function gotowhatsapp() {
+			
+			var name = document.getElementById("name").value;
+			var phone = document.getElementById("phone").value;
+			var address = document.getElementById("address").value;
+			var CakeType = document.getElementById("CakeType").value;
+			var message = document.getElementById("message").value;
+		
+			var url = "https://wa.me/918830210830?text=" 
+			+ "Name: " + name + "%0a"
+			+ "Phone: " + phone + "%0a"
+			+ "Address: " + address + "%0a"
+			+ "Cake Type: " + CakeType + "%0a"
+			+ "Message: " + message; 
+		
+			window.open(url, '_blank').focus();
+		}
+		</script>
 	<!--//footer-->
 
 </body>
