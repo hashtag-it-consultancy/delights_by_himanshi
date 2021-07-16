@@ -47,6 +47,7 @@ p {
 .nav-icon {
   float: right;
   margin-top: 1.5em;
+  /* position: fixed; */
 }
 i.glyphicon.glyphicon-menu-hamburger {
   color: #fff;
@@ -367,7 +368,7 @@ ul.grid-news li b {
 }
 /*--conent--*/
 .content-item {
-  background: url(../images/ne.jpg) no-repeat;
+  background: url(../images/home/Services/Regular.jpeg) no-repeat;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -377,13 +378,19 @@ ul.grid-news li b {
   z-index: 9999;
 }
 .content-item1 {
-  background: url(../images/ne1.jpg) no-repeat;
+  background: url(../images/home/Services/theme.png) no-repeat;
 }
 .content-item2 {
-  background: url(../images/ne2.jpg) no-repeat;
+  background: url(../images/home/Services/pinata.jpg) no-repeat;
 }
 .content-item3 {
-  background: url(../images/ne3.jpg) no-repeat;
+  background: url(../images/home/Services/anti_gravity.jpg) no-repeat;
+}
+.content-item4 {
+  background: url(../images/home/Services/dry.jpg) no-repeat;
+}
+.content-item5 {
+  background: url(../images/home/Services/pull_me_up.jpg) no-repeat;
 }
 .content-item .overlay {
   border-bottom: 100px solid #97824b;
