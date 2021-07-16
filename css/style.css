@@ -148,7 +148,7 @@ i.glyphicon.glyphicon-menu-hamburger {
   transform: rotateX(-180deg);
 }
 .hover-fold .front {
-  background: url(../images/reg_cake_1.jpg) top;
+  background: url(../images/home/reg_cake_1.jpg) top;
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
@@ -171,7 +171,7 @@ i.glyphicon.glyphicon-menu-hamburger {
   line-height: 2em;
 }
 .hover-fold .bottom {
-  background: url(../images/reg_cake_1.jpg) bottom;
+  background: url(../images/home/reg_cake_1.jpg) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -179,16 +179,16 @@ i.glyphicon.glyphicon-menu-hamburger {
   z-index: 0;
 }
 .hover-fold .front1 {
-  background: url(../images/theme_cake_1.jpg) top;
+  background: url(../images/home/theme_cake_1.jpg) top;
 }
 .hover-fold .bottom1 {
-  background: url(../images/theme_cake_1.jpg) bottom;
+  background: url(../images/home/theme_cake_1.jpg) bottom;
 }
 .hover-fold .front2 {
-  background: url(../images/cup_cakes1.jpg) top;
+  background: url(../images/home/cup_cakes1.jpg) top;
 }
 .hover-fold .bottom2 {
-  background: url(../images/cup_cakes1.jpg) bottom;
+  background: url(../images/home/cup_cakes1.jpg) bottom;
 }
 /*--content--*/
 .content-top-top {
